@@ -13,7 +13,7 @@ const diameter = 50; // diameter of the ball
 const radius = diameter / 2;
 const energyAbsorb = .33; // energy absorption of the floor and walls; from 0.0 to 1.0
 const friction = .33; // friction of the floor; from 0.0 to 1.0
-const gravity = 1; // gravity
+const gravity = 1; // gravity; 1 is Earth gravity, 0.167 is Moon gravity, etc. *the ball glitches out at higher values*
 
 function draw() {
 	colorMode(RGB);
