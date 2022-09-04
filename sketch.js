@@ -1,5 +1,6 @@
 function setup() {
 	createCanvas(windowWidth - 18, windowHeight - 18);
+	background(85);
 	fill(200);
 	noStroke();
 	rectMode(CENTER);
@@ -16,7 +17,7 @@ const friction = .33; // friction of the floor; from 0.0 to 1.0
 const gravity = .5; // gravity; from 0.0 to 1.0
 
 function draw() {
-	background(85);
+	background(85, 63);
 	circle(x, y, diameter);
 	iY += gravity;
 	if (x <= radius || x >= width - radius) {
