@@ -7,8 +7,8 @@ function setup() {
 
 let x = window.innerWidth / 2;
 let y = window.innerHeight / 2;
-let iX = -10; // Initial horizontal velocity; positive is right, negative is left
-let iY = -10; // Initial vertical velocity; negative is up, positive is down
+let iX = 0; // Initial horizontal velocity; positive is right, negative is left
+let iY = 0; // Initial vertical velocity; negative is up, positive is down
 const diameter = 50 // diameter of the ball
 const radius = diameter / 2;
 const energyAbsorb = .4; // energy absorption of the floor and walls; from 0.0 to 1.0
