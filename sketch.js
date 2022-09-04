@@ -46,3 +46,10 @@ function draw() {
 	x += iX;
 	y += iY;
 }
+
+function mousePressed() {
+        x = width / 2; // resetting x
+        y = height / 2; // resetting y
+        iX = -(width / 2 - mouseX) * .1; // horizontal velocity depends on how far from the center the cursor is horizontally
+        iY = -(height / 2 - mouseY) * .1; // vertical velocity depends on how far from the center the cursor is vertically
+}
