@@ -27,7 +27,7 @@ function draw() {
 	circle(x, y, diameter);
 	iY += gravity;
 	if (x <= radius || x >= width - radius) {
-		if (x <= 50) {
+		if (x <= radius) {
 			while (x <= radius) {
 				x += .01;
 			}
@@ -38,7 +38,7 @@ function draw() {
 		}
 		iX *= -1 + energyAbsorb;
 	} else if (y <= radius || y >= height - radius) {
-		if (y <= 50) {
+		if (y <= radius) {
 			while (y <= radius) {
 				y += .01;
 			}
